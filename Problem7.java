@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Problem7 {
     public static double ArrayReverse(int[] arr, int start, int end) // Creating function to Reverse given array
     {
         if (start >= end) // If the start index is greater than or equal to the end index, the array has been fully reversed
@@ -15,7 +15,7 @@ public class Main {
             return ArrayReverse(arr, start + 1, end - 1); // Recursively call the ArrayReverse function with the next start and end indices
         }
     }
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner num = new Scanner(System.in); // Creating the Scanner function to read user input
         int n =  num.nextInt(); // Read in the length of the array

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Problem10 {
     public static int FindGCD(int a, int b) // Creating function to find GCD of user values a and b
     {
         int c; // Creating variable c without value
@@ -26,7 +26,7 @@ public class Main {
         return c; // Returns the GCD of a and b
 
     }
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner number = new Scanner(System.in); // Creating Scanner function to read user input values
         int a = number.nextInt(); // Creating and giving variable a user values

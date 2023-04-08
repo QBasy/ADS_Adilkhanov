@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Problem8 {
     public static String IsVariableContainsLetter(String a) // Creating function to find out if our variable contains any letter
     {
         for (char c = 'a'; c <= 'z'; c++) // Creating loop that gives char values of every letter
@@ -13,7 +13,7 @@ public class Main {
         }
         return "Yes"; // If variable doesn't contains any letter function returns with value "Yes"
     }
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner scanner = new Scanner(System.in); // Creating Scanner function to read user input
         String a = scanner.next(); // Creating variable with user value

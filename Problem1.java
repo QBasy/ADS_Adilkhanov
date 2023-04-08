@@ -1,6 +1,5 @@
 import java.util.Scanner;
-
-public class Main {
+public class Problem1 {
     public static int FindSmallestValueInArray(int[] arr, int n) // Creating a function to find the smallest value in array
     {
         int lowest = 0; // Initialize variable to hold the smallest value found
@@ -18,7 +17,7 @@ public class Main {
         }
         return arr[0]; // Returning the smallest value of given array
     }
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner scanner = new Scanner(System.in); // Creating Scanner to read user input
         int n = scanner.nextInt(); // Input array size

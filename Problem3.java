@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Main {
+
+public class Problem3 {
     public static String FindPrimeNumber(int n) // Creating function to find Prime number
     {
         String a = "Prime"; // Creating String variable with the value "Prime"
@@ -12,7 +13,7 @@ public class Main {
         }
         return a; // Returns the final value of the variable a
     }
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner number = new Scanner(System.in); // Creating function Scannet to read user input
         int n = number.nextInt(); // Creating variable n and reading the user input

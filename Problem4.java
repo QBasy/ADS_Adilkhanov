@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Problem4 {
     public static int Factorial(int n) // Creating function to find factorial solution
     {
         int avg = 1; // Creating variable avg with value 1
@@ -10,7 +10,7 @@ public class Main {
         }
         return avg; // Returns the solution of the factorial
     }
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner num = new Scanner(System.in); // Creating Scanner function to read user input
         int n = num.nextInt(); // Creating variable n and giving it user value

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Problem9 {
     public static int FindBinomialCoefficient(int n, int k) // Creating the function to find binomial coefficent by using user values n and k
     {
         if (k == 0 || n == k) // Creating statement to check if k is equal 0, or is n equal k
@@ -12,7 +12,7 @@ public class Main {
         }
     }
 
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner scanner = new Scanner(System.in); // Creating Scanner function to read user input
         int n = scanner.nextInt(); // Creating and giving value to variable n
