@@ -1,4 +1,4 @@
-# Sayat Adilkhanov's Assingment 1
+# :neutral_face: Sayat Adilkhanov's Assingment 1
 
 # Main 🚀
 
@@ -24,35 +24,72 @@ The Main class is created to call each class by using Scanner and methods (switc
 ```       
 
 # Problem:one:
+
+This code finds the minimum element of the array using a loop 
 ```java
-        int lowest = 0; // Initialize variable to hold the smallest value found
-        for (int i = 0; i < n; i++) // This loop iterates through each element of the array
+        int lowest = 0; 
+        for (int i = 0; i < n; i++) 
         {
-            for (int j = i + 1; j < n; j++) // This loop iterates through all elements after the current element
+            for (int j = i + 1; j < n; j++)
             {
-                if (arr[i] > arr[j]) // Compare the current element with each of the elements after it
+                if (arr[i] > arr[j])
                 {
-                    lowest = arr[i]; // Save the element as the smallest found so far
-                    arr[i] = arr[j]; // Swap the element with the smaller
-                    arr[j] = lowest; // Set the smaller element as the new current element
+                    lowest = arr[i];
+                    arr[i] = arr[j]; 
+                    arr[j] = lowest; 
                 }
             }
         }
 ```
 # Problem:two:
 
+This code finds the Average of all the elements of the array with summing them using the for loop and divides them by the size of the array itself
+```java
+        double avg = 0; // Initialize a variable average
+        for (int j : arr) // Creating loop to summarize every value of array to our average
+            {
+                avg = avg + j; // Here is the summarizing
+            }
+            avg = avg/n; // Dividing our average to array size
+            return avg; // Returning completed average
+```            
 # Problem:three:
 
+
+```java
+``` 
 # Problem:four:
 
+
+```java
+``` 
 # Problem:five:
 
+
+```java
+``` 
 # Problem:six:
 
+
+```java
+``` 
 # Problem:seven:
 
+
+```java
+``` 
 # Problem:eight:
 
+
+```java
+``` 
 # Problem:nine:
 
+
+```java
+``` 
 # Problem:one::zero:
+
+
+```java
+``` 
