@@ -47,4 +47,4 @@ The Main class is created to call each class by using Scanner and methods (switc
 # Problem:seven:
 # Problem:eight:
 # Problem:nine:
-# Problem:one::zero:
+# Problem:ten::zero:
