@@ -103,7 +103,14 @@ This code tries to figure out whether the input number is prime or composite by 
 
 
 ```java
-        return pow(a,n);
+    if (n == 0) 
+    {
+        return 1;
+    }
+    else 
+    {
+        return a * Power(a, n-1);
+    }
 ``` 
 # Problem:seven:
 
