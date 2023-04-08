@@ -19,7 +19,7 @@ public class Problem3 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         Scanner number = new Scanner(System.in);
         int n = number.nextInt();
         System.out.println(FindPrimeNumber(n, 2));

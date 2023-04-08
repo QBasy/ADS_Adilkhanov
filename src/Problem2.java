@@ -14,7 +14,7 @@ public class Problem2 {
         }
     }
 
-    public static void main(String[] args)
+    public static void main()
     {
         Scanner num = new Scanner(System.in);
         int n = num.nextInt();
