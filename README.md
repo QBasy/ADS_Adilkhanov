@@ -143,7 +143,9 @@ This code finds the minimum element of the array by using recursive
 
 
 ```java
-        for (char c = 'a'; c <= 'z'; c++) 
+    public static String isVariableContainsLetter(String a)
+    {
+        for (char c = 'a'; c <= 'z'; c++)
         {
             if (a.contains(String.valueOf(c)))
             {
@@ -152,11 +154,14 @@ This code finds the minimum element of the array by using recursive
 
         }
         return "Yes";
+    }
 ``` 
 # Problem:nine:
 
 
 ```java
+    public static int FindBinomialCoefficient(int n, int k)
+    {
         if (k == 0 || n == k)
         {
             return 1;
@@ -164,6 +169,7 @@ This code finds the minimum element of the array by using recursive
         else {
             return FindBinomialCoefficient(n-1, k-1) + FindBinomialCoefficient(n-1, k);
         }
+    }
 ``` 
 # Problem:one::zero:
 
