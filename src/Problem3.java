@@ -11,6 +11,7 @@ public class Problem3 {
             if (n % i == 0) // Creating if statement to find our number is prime or not
             {
                 a = "Composite"; // If our number isn't prime our variable takes the value "Composite"
+                break;
             }
         }
         return a; // Returns the final value of the variable a
