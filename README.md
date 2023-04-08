@@ -23,7 +23,7 @@ The Main class is created to call each class by using Scanner and methods (switc
         }
 '''        
 
-# Problem1
+# Problem:one:
 '''java
         int lowest = 0; // Initialize variable to hold the smallest value found
         for (int i = 0; i < n; i++) // This loop iterates through each element of the array
