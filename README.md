@@ -4,7 +4,7 @@
 
 The Main class is created to call each class by using Scanner and methods (switch-case)
 
-'''java
+```java
         Scanner scanner = new Scanner(System.in);
         System.out.println("Which Problem you wanna solve (1-9)");
         int n = scanner.nextInt();
@@ -21,10 +21,10 @@ The Main class is created to call each class by using Scanner and methods (switc
             case 9 -> Problem9.main();
             case 10 -> Problem10.main();
         }
-'''        
+```       
 
 # Problem:one:
-'''java
+```java
         int lowest = 0; // Initialize variable to hold the smallest value found
         for (int i = 0; i < n; i++) // This loop iterates through each element of the array
         {
@@ -38,4 +38,4 @@ The Main class is created to call each class by using Scanner and methods (switc
                 }
             }
         }
-'''
+```
