@@ -44,8 +44,11 @@ This code finds the minimum element of the array using a loop
 # Problem:two:
 
 This code finds the Average of all the elements of the array with summing them using the for loop and divides them by the lenght of the array itself
+
 1.It summing every value of array to avg ```avg = avg +j; ```
+
 2.And then dividing it to array lenght ``` avg = avg/n; ```
+
 3.After all it returns the final value ```return avg;```
 ```java
         double avg = 0; 
