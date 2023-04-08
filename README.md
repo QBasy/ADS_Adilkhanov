@@ -25,108 +25,119 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:one:
 
-This code finds the minimum element of the array using a loop 
+This code finds the minimum element of the array by using recursive
+
 ```java
-        int lowest = 0; 
-        for (int i = 0; i < n; i++) 
-        {
-            for (int j = i + 1; j < n; j++)
-            {
-                if (arr[i] > arr[j])
-                {
-                    lowest = arr[i];
-                    arr[i] = arr[j]; 
-                    arr[j] = lowest; 
-                }
-            }
+    public static int FindSmallestValueInArray(int[] arr, int n) 
+    {
+        if (n == 1) {
+            return arr[0];
         }
+        int smallest = FindSmallestValueInArray(arr, n - 1);
+        if (arr[n - 1] < smallest) {
+            return arr[n - 1];
+        } else {
+            return smallest;
+        }
+    }
 ```
 # Problem:two:
 
-This code finds the Average of all the elements of the array with summing them using the for loop and divides them by the lenght of the array itself
 
-1.It summing every value of array to avg ```avg = avg +j; ```
 
-2.And then dividing it to array lenght ``` avg = avg/n; ```
 
-3.After all it returns the final value ```return avg;```
 ```java
-        double avg = 0; 
-        for (int j : arr) 
-            {
-                avg = avg + j;
-            }
-        avg = avg/n; 
-        return avg; 
+    public static double getAverageOfArray(int[] arr, int n)
+    {
+        if (n == 0) {
+            return 0;
+        }
+        else {
+            return ((getAverageOfArray(arr, n-1) * (n-1)) + arr[n-1]) / n;
+        }
+    }
 ```            
 # Problem:three:
 
-This code tries to figure out whether the input number is prime or composite by using the cycle
 
-1.In loop we enter integer ```i = 2``` with condition ```i <= n``` , to 
 
 ```java
-        String a = "Prime";
-        for (int i = 2; i <= n / 2; ++i) 
-        {
-            if (n % i == 0)
-            {
-                a = "Composite";
-                break;
-            }
+    public static String FindPrimeNumber(int n, int i) {
+        if (n <= 2) { 
+            return "Prime";
         }
-        return a;
+        else if (n % i == 0) { 
+            return "Composite";
+        }
+        else if (i * i > n) { 
+            return "Prime";
+        }
+        else { 
+            return FindPrimeNumber(n, i+1);
+        }
+    }
 ``` 
 # Problem:four:
 
 
 ```java
-        int avg = 1;
-        for (int j = 1; j <= n; j++)
-        {
-            avg = avg * j;
+    public static int getFactorial(int n) {
+        if (n == 0) { 
+            return 1;
         }
-        return avg;
+        else {
+            return n * getFactorial(n-1);
+        }
+    }
 ``` 
 # Problem:five:
 
 
 ```java
-        if (n == 0 || n == 1)
+    public static int Fibonacci(int n)
+    {
+            if (n == 0 || n == 1)
         {
             return n;
         } else {
             return Fibonacci(n - 1) + Fibonacci(n - 2);
         }
+    }
 ``` 
 # Problem:six:
 
 
 ```java
-    if (n == 0) 
+    public static double getPower(double n, double a)
     {
-        return 1;
-    }
-    else 
-    {
-        return a * Power(a, n-1);
+        if (n == 0)
+        {
+            return 1;
+        }
+        else
+        {
+            return a * getPower(a, n-1);
+        }
     }
 ``` 
 # Problem:seven:
 
 
 ```java
-        if (start >= end) 
+    public static double makeArrayReverse(int[] arr, int start, int end)
+    {
+        if (start >= end)
         {
-            System.exit(0); 
+            System.exit(0);
             return 0;
         } else
         {
-            int temp = arr[start]; 
-            arr[start] = arr[end]; 
-            arr[end] = temp;
-            return ArrayReverse(arr, start + 1, end - 1);
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp; 
+            return makeArrayReverse(arr, start + 1, end - 1); 
         }
+    }
 ``` 
 # Problem:eight:
 
@@ -158,18 +169,14 @@ This code tries to figure out whether the input number is prime or composite by 
 
 
 ```java
-        if (a == b) 
-            return a; 
-        if (a == 1 || b == 1) 
-            return 1;
-        if (a == 0 || b == 0)
-            return 0;
-        int c = Math.min(a, b);
-        while(a % b != 0)
+    public static int FindGCD(int a, int b)
+    {
+        if (b == 0)
         {
-            c = a % b;
-            a = b;
-            b = c;
+            return a;
+        } else
+        {
+            return FindGCD(b, a % b);
         }
-        return c;
+    }
 ``` 
