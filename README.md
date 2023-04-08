@@ -43,20 +43,34 @@ This code finds the minimum element of the array using a loop
 ```
 # Problem:two:
 
-This code finds the Average of all the elements of the array with summing them using the for loop and divides them by the size of the array itself
+This code finds the Average of all the elements of the array with summing them using the for loop and divides them by the lenght of the array itself
+1.It summing every value of array to avg ```avg = avg +j; ```
+2.And then dividing it to array lenght ``` avg = avg/n; ```
+3.After all it returns the final value ```return avg;```
 ```java
-        double avg = 0; // Initialize a variable average
-        for (int j : arr) // Creating loop to summarize every value of array to our average
+        double avg = 0; 
+        for (int j : arr) 
             {
-                avg = avg + j; // Here is the summarizing
+                avg = avg + j;
             }
-            avg = avg/n; // Dividing our average to array size
-            return avg; // Returning completed average
+        avg = avg/n; 
+        return avg; 
 ```            
 # Problem:three:
 
+This code tries to figure out whether the input number is prime or composite by using the cycle
 
 ```java
+        String a = "Prime";
+        for (int i = 2; i <= n / 2; ++i) 
+        {
+            if (n % i == 0)
+            {
+                a = "Composite";
+                break;
+            }
+        }
+        return a;
 ``` 
 # Problem:four:
 
