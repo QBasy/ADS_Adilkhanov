@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Which Problem you wanna solve (1-9)");
+        System.out.println("Which Problem you wanna solve (1-10)");
         int n = scanner.nextInt();
         switch (n)
         {

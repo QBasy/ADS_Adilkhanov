@@ -3,30 +3,21 @@ package src;
 import java.util.Scanner;
 
 public class Problem10 {
-    public static int FindGCD(int a, int b) // Creating function to find GCD of user values a and b
+    public static int FindGCD(int a, int b)
     {
-        if (a == b) // First statement with condition a is equal b
-            return a; // If statement true it will return function with value of given numbers
-        if (a == 1 || b == 1) // Second statement checking is any value are equal to 1
-            return 1; // If statement true it will return function with value 1
-        if (a == 0 || b == 0) // Third statement checking is any value are equal to 0
-            return 0; // If statement true it will return function with value 0
-        // Creating variable c without value
-        int c = Math.min(a, b); // Giving variable c the minimal value of the a or b
-        while(a % b != 0) // Creating the loop to find out the greatest common divisor
+        if (b == 0)
         {
-            c = a % b;
-            a = b;
-            b = c;
+            return a;
+        } else
+        {
+            return FindGCD(b, a % b);
         }
-        return c; // Returns the GCD of a and b
-
     }
     public static void main()
     {
-        Scanner number = new Scanner(System.in); // Creating Scanner function to read user input values
-        int a = number.nextInt(); // Creating and giving variable a user values
-        int b = number.nextInt(); // Creating and giving variable b user values
-        System.out.println(FindGCD(a,b)); // Output the GCD of a and b by using function
+        Scanner number = new Scanner(System.in);
+        int a = number.nextInt();
+        int b = number.nextInt();
+        System.out.println(FindGCD(a,b));
     }
 }
