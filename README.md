@@ -63,6 +63,8 @@ This code finds the Average of all the elements of the array with summing them u
 
 This code tries to figure out whether the input number is prime or composite by using the cycle
 
+1.In loop we enter integer ```i = 2``` with condition ```i <= n``` , to 
+
 ```java
         String a = "Prime";
         for (int i = 2; i <= n / 2; ++i) 
