@@ -3,10 +3,9 @@ import java.util.Scanner;
 public class Main {
     public static String IsVariableContainsLetter(String a) // Creating function to find out if our variable contains any letter
     {
-        char c; // Creating char variable without values
-        for (c = 'a'; c <= 'z'; c++) // Creating loop that gives our char values of every letter
+        for (char c = 'a'; c <= 'z'; c++) // Creating loop that gives char values of every letter
         {
-            if (a.contains(String.valueOf(c))) // This statement checking out is our variable contains any letter
+            if (a.contains(String.valueOf(c))) // This statement checking out is our String variable contains any letter
             {
                 return "No"; // If any letter is inside of the variable it returns function with value "No"
             }
