@@ -1,18 +1,24 @@
 package src;
 
 import java.util.Scanner;
-import static java.lang.Math.pow;
 
 public class Problem6 {
-    public static double Power(double n, double a) // Creating function to find value a in power n
+    public static double getPower(double n, double a) // Creating function to find value a in power n
     {
-        return pow(a,n); // Returns value a in power n by Using java.lang.Math.pow
+        if (n == 0) // Condition when n is equal to 0
+        {
+            return 1; // Returns value 1
+        }
+        else
+        {
+            return a * getPower(a, n-1); // Returns the value of a to the power of n to the caller
+        }
     }
     public static void main()
     {
-        Scanner num = new Scanner(System.in); // Creating Scanner function to read user input values
-        double a = num.nextDouble(); // Creating the first variable to give a number value by using scanner
-        double n = num.nextDouble(); // Creating the second value to give a power value by using scanner
-        System.out.println(Power(n,a)); // Outputs the value of the number a in power of n by using function Power
+        Scanner num = new Scanner(System.in);
+        double a = num.nextDouble();
+        double n = num.nextDouble();
+        System.out.println(getPower(n,a));
     }
 }

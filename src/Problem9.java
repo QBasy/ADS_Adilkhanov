@@ -16,9 +16,9 @@ public class Problem9 {
 
     public static void main()
     {
-        Scanner scanner = new Scanner(System.in); // Creating Scanner function to read user input
-        int n = scanner.nextInt(); // Creating and giving value to variable n
-        int k = scanner.nextInt(); // Creating and giving value to variable k
-        System.out.println(FindBinomialCoefficient(n,k)); // Output the final solution of function by using user values of n and k
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int k = scanner.nextInt();
+        System.out.println(FindBinomialCoefficient(n,k));
     }
 }
