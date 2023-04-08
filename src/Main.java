@@ -1,3 +1,5 @@
+package src;
+
 import  java.util.Scanner;
 public class Main {
     public static void main(String[] args)
@@ -5,7 +7,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Which Problem you wanna solve (1-9)");
         int n = scanner.nextInt();
-        switch (n) {
+        switch (n)
+        {
             case 1 -> Problem1.main();
             case 2 -> Problem2.main();
             case 3 -> Problem3.main();

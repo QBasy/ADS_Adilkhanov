@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Scanner;
 public class Problem1 {
     public static int FindSmallestValueInArray(int[] arr, int n) // Creating a function to find the smallest value in array
