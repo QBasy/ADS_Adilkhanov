@@ -41,11 +41,11 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **3.** If ```n > 1``` function recursively calls itself with the array ```arr``` and the size of the array decremented by ```n - 1```, stores it into ```smallest```
 
-**4** The function then checks if the last element of the array ```arr[n-1]``` is smaller than the current smallest value ```smallest```.
+**4.** The function then checks if the last element of the array ```arr[n-1]``` is smaller than the current smallest value ```smallest```.
 
-**4.1** If statement is true, it returns ```arr[n-1]```
+**4.1.** If statement is true, it returns ```arr[n-1]```
 
-**4.2** If statement is false, it returns ```smallest```
+**4.2.** If statement is false, it returns ```smallest```
 
 ```java
     public static int findSmallestValueInArray(int[] arr, int n) 
@@ -70,17 +70,17 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **Description:** This function getting the average of each value of the array.
 
-**1** Function have array named ```arr``` and lenght of array named ```n```
+**1.** Function have array named ```arr``` and lenght of array named ```n```
 
-**2** If ```n == 0``` this function will end with value 0.
+**2.** If ```n == 0``` this function will end with value 0.
 
-**3** If ```n > 0``` function recursively calls itself with the array ```arr``` and ```n-1```.
+**3.** If ```n > 0``` function recursively calls itself with the array ```arr``` and ```n-1```.
 
-**3.1** It multiplies the previous average value ```getAverageOfArray(arr, n-1)``` by the number of elements in the array ```n-1``` and adds the value of the current element in the array ```arr[n-1]```
+**3.1.** It multiplies the previous average value ```getAverageOfArray(arr, n-1)``` by the number of elements in the array ```n-1``` and adds the value of the current element in the array ```arr[n-1]```
 
-**3.2** Result is then divided by ```n``` to get the new average value.
+**3.2.** Result is then divided by ```n``` to get the new average value.
 
-**4** In the end it returns the average
+**4.** In the end it returns the average
 
 
 ```java
@@ -103,17 +103,17 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **Description:** This function decides whether a number is Prime or Composite.
 
-**1** In function we have the user input ```n``` and value ```i = 2```.
+**1.** In function we have the user input ```n``` and value ```i = 2```.
 
-**2** To work this function have 3 conditions.
+**2.** To work this function have 3 conditions.
 
-**2.1** First Condition checks is ```n <= 2```, if statement true function will ends with value ```return "Prime"```.
+**2.1.** First Condition checks is ```n <= 2```, if statement true function will ends with value ```return "Prime";```.
 
-**2.2** Second Condition checks is ```n % i == 0```, if statement true function will ends with value ```return "Composite```.
+**2.2.** Second Condition checks is ```n % i == 0```, if statement true function will ends with value ```return "Composite";```.
 
-**2.3** Third Condition checks is ```i * i > n```, if statement true function will ends with value ```return "Prime```.
+**2.3.** Third Condition checks is ```i * i > n```, if statement true function will ends with value ```return "Prime";```.
 
-**3** If all statements are false function recursively calls itself with values ```n, i+1``` and getting back to the first condition.
+**3.** If all statements are false function recursively calls itself with values ```n, i+1``` and getting back to the first condition.
 
 
 
@@ -140,6 +140,13 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:four:
 
+**Description:** This function finding factorial of given value.
+
+**1.** Function have only user input ```n```.
+
+**2.** In first of all function checking is ```n == 0```, if statement true function returns with value ```return 1;``` 
+
+**3.** If ```n > 0 ``` function recursively calls itself with ```n-1```, for getting factorial it multiplies to ```n```.
 
 ```java
     public static int getFactorial(int n) {
@@ -158,11 +165,18 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:five:
 
+**Description:** This function getting fibonacci of given value.
+
+**1.** In function we have user input ```n```
+
+**2.** Function checks is ```n == 0``` or ```n == 1```, if statement is true function will return the given value ```n```
+
+**3.** If ```n > 1``` function recursively calls itself with ```n-1``` and ```n-2```, and adds both to find fibonacci solution.
 
 ```java
     public static int getFibonacci(int n)
     {
-            if (n == 0 || n == 1)
+        if (n == 0 || n == 1)
         {
             return n;
         } else {
