@@ -283,37 +283,24 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **Explanation:**
 
-**1.** In function we have user input ```a```
+**1.** In function we have user input ```a``` and ```c``` with value ```'a'```
 
-**2.** The function uses a ``` for ``` loop to iterate over all the letters of the English alphabet, from ``` 'a' ``` to ``` 'z' ```.
+**2.** The function uses char to iterate over all the letters of the English alphabet, from ``` 'a' ``` to ``` 'z' ```, and same with UPPERCASE LETTERS.
 
-**3.1** Then it checks whether ```a``` contains a value from ```c```.
+**3.** If statement is true function return value ```return "Yes";```.
 
-**3.2** If contains function ends with value ```return "No";```
+**4.** In return checking is String contains the char value, if it contains function ends with value ```return "No";```.
 
-**4** Second loop making like first but for UPPERCASE letters.
-
-**5** If function still alive it ends with value ```return "Yes";```
+**4.1** Then function recursively calls function with next letter and repeating function until char took all the letters and ends function with value ```return "Yes";``` .
 
 ```java
-    public static String isVariableContainsLetter(String a)
+    public static String isVariableContainsLetter(String a, char c) 
     {
-        for (char c = 'a'; c <= 'z'; c++)
+        if (c > 'z' && c > 'Z') 
         {
-            if (a.contains(String.valueOf(c)))
-            {
-                return "No";
-            }
-
+            return "Yes"; 
         }
-        for (char c = 'A'; c<= 'Z'; c++)
-        {
-            if (a.contains(String.valueOf(c)))
-            {
-                return "No";
-            }
-        }
-        return "Yes";
+        return a.contains(String.valueOf(c)) ? "No" : isVariableContainsLetter(a, ++c);
     }
 ``` 
 
