@@ -35,6 +35,8 @@ The Main class is created to call each class by using Scanner and methods (switc
 # Problem:one:
 **Description:** This function returns minimum value of the array by using recursive function
 
+**Explanation:**
+
 **1.** In fuction we have array ```arr``` and lenght ```n```
 
 **2.** First condition ```n == 1``` if true returns first value of array
@@ -70,6 +72,8 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **Description:** This function getting the average of each value of the array.
 
+**Explanation:**
+
 **1.** Function have array named ```arr``` and lenght of array named ```n```
 
 **2.** If ```n == 0``` this function will end with value 0.
@@ -103,6 +107,8 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **Description:** This function decides whether a number is Prime or Composite.
 
+**Explanation:**
+
 **1.** In function we have the user input ```n``` and value ```i = 2```.
 
 **2.** To work this function have 3 conditions.
@@ -115,7 +121,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **3.** If all statements are false function recursively calls itself with values ```n, i+1``` and getting back to the first condition.
 
-
+---
 
 ```java
     public static String findPrimeNumber(int n, int i) {
@@ -142,6 +148,8 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **Description:** This function finding factorial of given value.
 
+**Explanation:**
+
 **1.** Function have only user input ```n```.
 
 **2.** In first of all function checking is ```n == 0```, if statement true function returns with value ```return 1;``` 
@@ -167,6 +175,8 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **Description:** This function getting fibonacci of given value.
 
+**Explanation:**
+
 **1.** In function we have user input ```n```
 
 **2.** Function checks is ```n == 0``` or ```n == 1```, if statement is true function will return the given value ```n```
@@ -190,7 +200,15 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 
 # Problem:six:
+**Description:** 
 
+**Explanation:**
+
+**1.** 
+
+**2.** 
+
+**3.**
 
 ```java
     public static double getPower(double n, double a)
@@ -212,6 +230,15 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:seven:
 
+**Description:** 
+
+**Explanation:**
+
+**1.** 
+
+**2.** 
+
+**3.**
 
 ```java
     public static double makeArrayReverse(int[] arr, int start, int end)
@@ -236,6 +263,15 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:eight:
 
+**Description:** 
+
+**Explanation:**
+
+**1.** 
+
+**2.** 
+
+**3.**
 
 ```java
     public static String isVariableContainsLetter(String a)
@@ -258,6 +294,15 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:nine:
 
+**Description:** 
+
+**Explanation:**
+
+**1.** 
+
+**2.** 
+
+**3.**
 
 ```java
     public static int findBinomialCoefficient(int n, int k)
@@ -278,6 +323,15 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:one::zero:
 
+**Description:** 
+
+**Explanation:**
+
+**1.** 
+
+**2.** 
+
+**3.**
 
 ```java
     public static int findGCD(int a, int b)
