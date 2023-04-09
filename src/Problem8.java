@@ -6,34 +6,19 @@ public class Problem8 {
     /*
     isVariableContainsLetter - the function of finding char in user input
     String a - User input
-    for (...) - loop to bring char to the value of each letter
-    char c - in loop takes value of each letter of the English alphabet
-    if - condition checking is string contains char value
-    'return "No"' and 'return "Yes" - giving the final definition of function
+    char c - in takes value of each letter of the English alphabet
+    return - recursive checking is variable a contains letter 'a', if doesnt it move to next letter
      */
-    public static String isVariableContainsLetter(String a) // Creating function to find out if our variable contains any letter
-    {
-        for (char c = 'a'; c <= 'z'; c++) // Creating loop that gives char values of every lowercase letter
-        {
-            if (a.contains(String.valueOf(c))) // This statement checking out is our String variable contains any letter
-            {
-                return "No"; // If any letter is inside of the variable it returns value "No"
-            }
-
+    public static String isVariableContainsLetter(String a, char c) {
+        if (c > 'z' && c > 'Z') { // If checked all letters
+            return "Yes"; // If no letter is found, return "Yes"
         }
-        for (char c = 'A'; c<= 'Z'; c++) // Same but for UPPERCASE LETTERS
-        {
-            if (a.contains(String.valueOf(c)))
-            {
-                return "No";
-            }
-        }
-        return "Yes"; // Returns value "Yes"
+        return a.contains(String.valueOf(c)) ? "No" : isVariableContainsLetter(a, ++c); // check next letter
     }
     public static void main()
     {
         Scanner scanner = new Scanner(System.in);
         String a = scanner.next();
-        System.out.println(isVariableContainsLetter(a));
+        System.out.println(isVariableContainsLetter(a, 'c'));
     }
 }
