@@ -1,7 +1,10 @@
 # Assignemt_1 
 ### Made with :heart: by Sayat Adilkhanov
 
+
 ---
+
+
 # Main 🚀
 
 The Main class is created to call each class by using Scanner and methods (switch-case)
@@ -23,8 +26,12 @@ The Main class is created to call each class by using Scanner and methods (switc
             case 9 -> Problem9.main();
             case 10 -> Problem10.main();
         }
-```       
+```      
+
+
 ---
+
+
 # Problem:one:
 
 This code finds the minimum element of the array by using recursive
@@ -49,7 +56,11 @@ This code finds the minimum element of the array by using recursive
         }
     }
 ```
+
+
 ---
+
+
 # Problem:two:
 
 
@@ -66,7 +77,11 @@ This code finds the minimum element of the array by using recursive
         }
     }
 ```  
+
+
 ---
+
+
 # Problem:three:
 
 
@@ -87,7 +102,11 @@ This code finds the minimum element of the array by using recursive
         }
     }
 ``` 
+
+
 ---
+
+
 # Problem:four:
 
 
@@ -101,7 +120,11 @@ This code finds the minimum element of the array by using recursive
         }
     }
 ``` 
+
+
 ---
+
+
 # Problem:five:
 
 
@@ -116,7 +139,11 @@ This code finds the minimum element of the array by using recursive
         }
     }
 ``` 
+
+
 ---
+
+
 # Problem:six:
 
 
@@ -133,7 +160,11 @@ This code finds the minimum element of the array by using recursive
         }
     }
 ``` 
+
+
 ---
+
+
 # Problem:seven:
 
 
@@ -153,7 +184,11 @@ This code finds the minimum element of the array by using recursive
         }
     }
 ``` 
+
+
 ---
+
+
 # Problem:eight:
 
 
@@ -171,7 +206,11 @@ This code finds the minimum element of the array by using recursive
         return "Yes";
     }
 ``` 
+
+
 ---
+
+
 # Problem:nine:
 
 
@@ -187,7 +226,11 @@ This code finds the minimum element of the array by using recursive
         }
     }
 ``` 
+
+
 ---
+
+
 # Problem:one::zero:
 
 
