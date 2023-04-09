@@ -5,7 +5,8 @@
 ---
 
 
-# Main 🚀 `ADS_Adilkhanov/src/Main.java`
+# Main 🚀 
+`ADS_Adilkhanov/src/Main.java`
 
 The Main class is created to call each class by using Scanner and methods (switch-case)
 
