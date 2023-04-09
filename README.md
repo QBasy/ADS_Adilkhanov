@@ -1,4 +1,7 @@
-# Assignemt_1 made with :hearth: by [Sayat Adilkhanov]
+# Assignemt_1 
+---
+
+Made with :heart: by [Your Name]
 
 # Main 🚀
 
