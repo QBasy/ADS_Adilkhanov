@@ -28,12 +28,12 @@ The Main class is created to call each class by using Scanner and methods (switc
 This code finds the minimum element of the array by using recursive
 
 ```java
-    public static int FindSmallestValueInArray(int[] arr, int n) 
+    public static int findSmallestValueInArray(int[] arr, int n) 
     {
         if (n == 1) {
             return arr[0];
         }
-        int smallest = FindSmallestValueInArray(arr, n - 1);
+        int smallest = findSmallestValueInArray(arr, n - 1);
         if (arr[n - 1] < smallest) {
             return arr[n - 1];
         } else {
@@ -62,7 +62,7 @@ This code finds the minimum element of the array by using recursive
 
 
 ```java
-    public static String FindPrimeNumber(int n, int i) {
+    public static String findPrimeNumber(int n, int i) {
         if (n <= 2) { 
             return "Prime";
         }
@@ -73,7 +73,7 @@ This code finds the minimum element of the array by using recursive
             return "Prime";
         }
         else { 
-            return FindPrimeNumber(n, i+1);
+            return findPrimeNumber(n, i+1);
         }
     }
 ``` 
@@ -94,13 +94,13 @@ This code finds the minimum element of the array by using recursive
 
 
 ```java
-    public static int Fibonacci(int n)
+    public static int getFibonacci(int n)
     {
             if (n == 0 || n == 1)
         {
             return n;
         } else {
-            return Fibonacci(n - 1) + Fibonacci(n - 2);
+            return getFibonacci(n - 1) + getFibonacci(n - 2);
         }
     }
 ``` 
@@ -160,14 +160,14 @@ This code finds the minimum element of the array by using recursive
 
 
 ```java
-    public static int FindBinomialCoefficient(int n, int k)
+    public static int findBinomialCoefficient(int n, int k)
     {
         if (k == 0 || n == k)
         {
             return 1;
         }
         else {
-            return FindBinomialCoefficient(n-1, k-1) + FindBinomialCoefficient(n-1, k);
+            return findBinomialCoefficient(n-1, k-1) + findBinomialCoefficient(n-1, k);
         }
     }
 ``` 
@@ -175,14 +175,14 @@ This code finds the minimum element of the array by using recursive
 
 
 ```java
-    public static int FindGCD(int a, int b)
+    public static int findGCD(int a, int b)
     {
         if (b == 0)
         {
             return a;
         } else
         {
-            return FindGCD(b, a % b);
+            return findGCD(b, a % b);
         }
     }
 ``` 
