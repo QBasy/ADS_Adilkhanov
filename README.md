@@ -1,6 +1,4 @@
 # Assignemt_1 
----
-
 # Made with :heart: by Sayat Adilkhanov
 
 ---
