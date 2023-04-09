@@ -1,4 +1,4 @@
-# :neutral_face: Sayat Adilkhanov's Assingment 1
+# Assignemt_1 made with :hearth: by [Sayat Adilkhanov]
 
 # Main 🚀
 
@@ -26,6 +26,12 @@ The Main class is created to call each class by using Scanner and methods (switc
 # Problem:one:
 
 This code finds the minimum element of the array by using recursive
+
+1.
+
+2.
+
+3.
 
 ```java
     public static int findSmallestValueInArray(int[] arr, int n) 
