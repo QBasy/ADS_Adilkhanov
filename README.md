@@ -33,13 +33,19 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 
 # Problem:one:
-**Description: This function returns minimum value of the array by using recursive function**
+**Description:** This function returns minimum value of the array by using recursive function
 
-1. In fuction we have array ```arr``` and lenght ```n```
+**1.** In fuction we have array ```arr``` and lenght ```n```
 
-2.
+**2.** First condition ```n == 1``` if true returns first value of array
 
-3.
+**3.** If ```n > 1```, then the function recursively calls itself with the array ```arr``` and the size of the array decremented by ```n - 1```, then stores it into ```smallest```
+
+**4** The function then checks if the last element of the array ```arr[n-1]``` is smaller than the current smallest value ```smallest```.
+
+**4.1** If statement is true, it returns ```arr[n-1]```
+
+**4.2** If statement is false, it returns ```smallest```
 
 ```java
     public static int findSmallestValueInArray(int[] arr, int n) 
