@@ -34,9 +34,9 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:one:
 
-This code finds the minimum element of the array by using recursive
+- Description: This function returns minimum value of the array by using recursive function
 
-1.
+1. In fuction we have array ```arr``` and lenght ```n```
 
 2.
 
