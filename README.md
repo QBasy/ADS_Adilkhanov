@@ -5,8 +5,7 @@
 ---
 
 
-# Main 🚀 
-[Link to Main.java](src/Main.java)
+# Main 🚀 [Link](src/Main.java)
 
 The Main class is created to call each class by using Scanner and methods (switch-case)
 
@@ -33,7 +32,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:one:
+# Problem:one: [Link](src/Problem1.java)
 **Description:** This function returns minimum value of the array by using recursive function
 
 **Explanation:**
@@ -69,7 +68,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:two:
+# Problem:two: [Link](src/Problem2.java)
 
 **Description:** This function getting the average of each value of the array.
 
@@ -104,7 +103,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:three:
+# Problem:three: [Link](src/Problem3.java)
 
 **Description:** This function decides whether a number is Prime or Composite.
 
@@ -143,7 +142,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:four:
+# Problem:four: [Link](src/Problem4.java)
 
 **Description:** This function finding factorial of given value.
 
@@ -170,7 +169,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:five:
+# Problem:five: [Link](src/Problem5.java)
 
 **Description:** This function getting fibonacci of given value.
 
@@ -198,7 +197,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:six:
+# Problem:six: [Link](src/Problem6.java)
 **Description:** This function finds ```a``` in power of ```n```.
 
 **Explanation:**
@@ -227,7 +226,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:seven:
+# Problem:seven: [Link](src/Problem7.java)
 
 **Description:** This function reversing the array.
 
@@ -278,7 +277,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:eight:
+# Problem:eight: [Link](src/Problem8.java)
 
 **Description:** This function checks is user input contains letter's
 
@@ -322,7 +321,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:nine:
+# Problem:nine: [Link](src/Problem9.java)
 
 **Description:** This function solve binomial coefficient.
 
@@ -353,7 +352,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 ---
 
 
-# Problem:one::zero:
+# Problem:one::zero: [Link](src/Problem10.java)
 
 **Description:** This function finds Greatest Common Divisor of given 2 number's.
 
