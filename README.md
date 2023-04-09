@@ -39,7 +39,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **2.** First condition ```n == 1``` if true returns first value of array
 
-**3.** If ```n > 1```, then the function recursively calls itself with the array ```arr``` and the size of the array decremented by ```n - 1```, then stores it into ```smallest```
+**3.** If ```n > 1``` function recursively calls itself with the array ```arr``` and the size of the array decremented by ```n - 1```, stores it into ```smallest```
 
 **4** The function then checks if the last element of the array ```arr[n-1]``` is smaller than the current smallest value ```smallest```.
 
