@@ -119,9 +119,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **2.3.** Third Condition checks is ```i * i > n```, if statement true function will ends with value ```return "Prime";```.
 
-**3.** If all statements are false function recursively calls itself with values ```n, i+1``` and getting back to the first condition.
-
----
+**3.** If all statements are false function recursively calls itself with values ```n, i+1``` and getting back to the first condition until it gets the answer.
 
 ```java
     public static String findPrimeNumber(int n, int i) {
@@ -154,7 +152,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **2.** In first of all function checking is ```n == 0```, if statement true function returns with value ```return 1;``` 
 
-**3.** If ```n > 0 ``` function recursively calls itself with ```n-1```, for getting factorial it multiplies to ```n```.
+**3.** If ```n > 0 ``` function recursively calls itself with ```n-1```, it multiplies to ```n``` until it gets the value of factorial.
 
 ```java
     public static int getFactorial(int n) {
@@ -181,7 +179,7 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **2.** Function checks is ```n == 0``` or ```n == 1```, if statement is true function will return the given value ```n```
 
-**3.** If ```n > 1``` function recursively calls itself with ```n-1``` and ```n-2```, and adds both to find fibonacci solution.
+**3.** If ```n > 1``` function recursively calls itself with ```n-1``` and ```n-2```, and adds both until it gets the value of fibonacci.
 
 ```java
     public static int getFibonacci(int n)
@@ -200,15 +198,15 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 
 # Problem:six:
-**Description:** 
+**Description:** This function finds ```a``` in power of ```n```.
 
 **Explanation:**
 
-**1.** 
+**1.** In function we have user input values ```n``` and ```a```.
 
-**2.** 
+**2.** If ```n == 0``` function ends with value ```1```
 
-**3.**
+**3.** If ```n > 0``` function recursively calls itself with ```(a, n-1)``` and multiplying it to ```a``` until it gets the value ```a``` in Power of ```n```.
 
 ```java
     public static double getPower(double n, double a)
@@ -230,15 +228,19 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:seven:
 
-**Description:** 
+**Description:** This function reversing the array.
 
 **Explanation:**
 
-**1.** 
+**1.** In function we have array named ```arr```, first value of array ```start``` and last value of array ```end```.
 
-**2.** 
+**2.** If ```start >= end``` function ends.
 
-**3.**
+**3.** If ```start > end``` function swap ```start``` and ```end```.
+
+**4.** Then function recursively calls itself with parameters ```(arr, start + 1, end - 1)```, until the length of the array ends.
+
+**5.** Then in the main function loop wrote reversed array.
 
 ```java
     public static double makeArrayReverse(int[] arr, int start, int end)
@@ -255,6 +257,20 @@ The Main class is created to call each class by using Scanner and methods (switc
             return makeArrayReverse(arr, start + 1, end - 1); 
         }
     }
+    
+```
+
+**5.** Then in the main function loop wrote reversed array.
+
+```java    
+    public static void main()
+    {
+    ...
+    for (int i = 0; i < n; i++)
+        {
+            System.out.print(arr[i] + " ");
+        }
+    }
 ``` 
 
 
@@ -263,15 +279,15 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:eight:
 
-**Description:** 
+**Description:** This function checks is user input contains letter's
 
 **Explanation:**
 
-**1.** 
+**1.** In function we have user input ```a```
 
-**2.** 
+**2.** The function uses a ```javafor``` loop to iterate over all the letters of the English alphabet, from ```java'a'``` to ```java'z'```.
 
-**3.**
+**3.1** Then it checks whether ```a``` contains a value from ```c```
 
 ```java
     public static String isVariableContainsLetter(String a)
@@ -283,6 +299,13 @@ The Main class is created to call each class by using Scanner and methods (switc
                 return "No";
             }
 
+        }
+        for (char c = 'A'; c<= 'Z'; c++)
+        {
+            if (a.contains(String.valueOf(c)))
+            {
+                return "No";
+            }
         }
         return "Yes";
     }
