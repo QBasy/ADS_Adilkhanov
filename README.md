@@ -285,9 +285,15 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 **1.** In function we have user input ```a```
 
-**2.** The function uses a ```javafor``` loop to iterate over all the letters of the English alphabet, from ```java'a'``` to ```java'z'```.
+**2.** The function uses a ``` for ``` loop to iterate over all the letters of the English alphabet, from ``` 'a' ``` to ``` 'z' ```.
 
-**3.1** Then it checks whether ```a``` contains a value from ```c```
+**3.1** Then it checks whether ```a``` contains a value from ```c```.
+
+**3.2** If contains function ends with value ```return "No";```
+
+**4** Second loop making like first but for UPPERCASE letters.
+
+**5** If function still alive it ends with value ```return "Yes";```
 
 ```java
     public static String isVariableContainsLetter(String a)
@@ -317,15 +323,17 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:nine:
 
-**Description:** 
+**Description:** This function solve binomial coefficient.
 
 **Explanation:**
 
-**1.** 
+**1.** In function we have user inputs ```n``` and ```k``` for Binomial coefficient.
 
-**2.** 
+**2.** If ```k == 0``` or ```k == n``` function ends with value ```return 1;```.
 
-**3.**
+**3.** If ```k > 0``` and ```k != n``` functiond calls itself with ```n-1, k-1``` and ```n-1, k```.
+
+**3.1** Then adds them both until it gets the value of Binomial Coefficient.
 
 ```java
     public static int findBinomialCoefficient(int n, int k)
@@ -346,15 +354,15 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:one::zero:
 
-**Description:** 
+**Description:** This function finds Greatest Common Divisor of given 2 number's.
 
 **Explanation:**
 
-**1.** 
+**1.** In Function we have 2 user input's ```a``` and ```b```.
 
-**2.** 
+**2.** If ```b == 0``` value of ```a``` or if ```a == 0``` value of ```b```.
 
-**3.**
+**3.** If both statement's are false function recursively calls itself with (b, a % b), until it find Greatest Common Divisor of ```a``` and ```b```
 
 ```java
     public static int findGCD(int a, int b)
@@ -362,6 +370,9 @@ The Main class is created to call each class by using Scanner and methods (switc
         if (b == 0)
         {
             return a;
+        } else if (a == 0)
+        {
+            return b;
         } else
         {
             return findGCD(b, a % b);
