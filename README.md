@@ -68,7 +68,19 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:two:
 
+**Description:** This function getting the average of each value of the array.
 
+**1** Function have array named ```arr``` and lenght of array named ```n```
+
+**2** If ```n == 0``` this function will end with value 0.
+
+**3** If ```n > 0``` function recursively calls itself with the array ```arr``` and ```n-1```.
+
+**3.1** It multiplies the previous average value ```getAverageOfArray(arr, n-1)``` by the number of elements in the array ```n-1``` and adds the value of the current element in the array ```arr[n-1]```
+
+**3.2** Result is then divided by ```n``` to get the new average value.
+
+**4** In the end it returns the average
 
 
 ```java
