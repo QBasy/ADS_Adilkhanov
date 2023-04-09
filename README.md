@@ -101,6 +101,20 @@ The Main class is created to call each class by using Scanner and methods (switc
 
 # Problem:three:
 
+**Description:** This function decides whether a number is Prime or Composite.
+
+**1** In function we have the user input ```n``` and value ```i = 2```.
+
+**2** To work this function have 3 conditions.
+
+**2.1** First Condition checks is ```n <= 2```, if statement true function will ends with value ```return "Prime"```.
+
+**2.2** Second Condition checks is ```n % i == 0```, if statement true function will ends with value ```return "Composite```.
+
+**2.3** Third Condition checks is ```i * i > n```, if statement true function will ends with value ```return "Prime```.
+
+**3** If all statements are false function recursively calls itself with values ```n, i+1``` and getting back to the first condition.
+
 
 
 ```java
