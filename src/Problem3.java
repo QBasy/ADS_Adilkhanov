@@ -4,7 +4,14 @@ import java.util.Scanner;
 
 
 public class Problem3 {
-    public static String FindPrimeNumber(int n, int i) {
+    /*
+    findPrimeNumber - function decides a given number is prime or composite
+    n - is experimental rat
+    i - number with a value of 2
+    return "Prime" and "Composite" - giving the final solution
+    return findPrimeNumber(n, i+1) - recursive function adds the number 1 to i
+     */
+    public static String findPrimeNumber(int n, int i) {
         if (n <= 2) { // First Condition
             return "Prime";
         }
@@ -15,13 +22,13 @@ public class Problem3 {
             return "Prime";
         }
         else { // recursive
-            return FindPrimeNumber(n, i+1);
+            return findPrimeNumber(n, i+1);
         }
     }
 
     public static void main() {
         Scanner number = new Scanner(System.in);
         int n = number.nextInt();
-        System.out.println(FindPrimeNumber(n, 2));
+        System.out.println(findPrimeNumber(n, 2));
     }
 }

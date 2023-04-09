@@ -3,6 +3,14 @@ package src;
 import java.util.Scanner;
 
 public class Problem8 {
+    /*
+    isVariableContainsLetter - the function of finding char in user input
+    String a - User input
+    for (...) - loop to bring char to the value of each letter
+    char c - in loop takes value of each letter of the English alphabet
+    if - condition checking is string contains char value
+    'return "No"' and 'return "Yes" - giving the final definition of function
+     */
     public static String isVariableContainsLetter(String a) // Creating function to find out if our variable contains any letter
     {
         for (char c = 'a'; c <= 'z'; c++) // Creating loop that gives char values of every letter

@@ -3,6 +3,12 @@ package src;
 import java.util.Scanner;
 
 public class Problem6 {
+    /*
+    getPower - function finding the a in power n
+    n - power value
+    a - number reduced to a power
+    return - final solution of a in power n
+     */
     public static double getPower(double n, double a) // Creating function to find value a in power n
     {
         if (n == 0) // Condition when n is equal to 0
