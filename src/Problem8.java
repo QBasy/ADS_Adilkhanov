@@ -13,13 +13,20 @@ public class Problem8 {
      */
     public static String isVariableContainsLetter(String a) // Creating function to find out if our variable contains any letter
     {
-        for (char c = 'a'; c <= 'z'; c++) // Creating loop that gives char values of every letter
+        for (char c = 'a'; c <= 'z'; c++) // Creating loop that gives char values of every lowercase letter
         {
             if (a.contains(String.valueOf(c))) // This statement checking out is our String variable contains any letter
             {
                 return "No"; // If any letter is inside of the variable it returns value "No"
             }
 
+        }
+        for (char c = 'A'; c<= 'Z'; c++) // Same but for UPPERCASE LETTERS
+        {
+            if (a.contains(String.valueOf(c)))
+            {
+                return "No";
+            }
         }
         return "Yes"; // Returns value "Yes"
     }
