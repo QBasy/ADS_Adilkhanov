@@ -6,7 +6,7 @@
 
 
 # Main 🚀 
-src/Main.java
+main/src/Main.java
 
 The Main class is created to call each class by using Scanner and methods (switch-case)
 
